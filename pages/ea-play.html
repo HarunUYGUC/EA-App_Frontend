@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Special+Gothic&family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../favicon/">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>EA Play</title>
+</head>
+<body>
+    <div class="row g-0">
+        <div class="left-bar col-2">
+            <div class="links">
+                <div class="link my-2 ps-3">
+                    <a href="../index.html" class="nav-link">
+                        <i class="left-icon fa-solid fa-house-chimney"></i>
+                        <span class="left-icon-text">Ana Ekran</span>
+                    </a>
+                </div>
+                <div class="link my-2 ps-3">
+                    <a href="take-a-look.html" class="nav-link">
+                        <i class="left-icon fa-solid fa-eye"></i>
+                        <span class="left-icon-text">Göz At</span>
+                    </a>
+                </div>
+                <div class="link my-2 ps-3">
+                    <a href="library.html" class="nav-link">
+                        <i class="left-icon fa-solid fa-layer-group"></i>
+                        <span class="left-icon-text">Kütüphane</span>
+                    </a>
+                </div>
+                <div class="link my-2 ps-3">
+                    <a href="ea-play.html" class="nav-link">
+                        <i class="left-icon fa-solid fa-play"></i>
+                        <span class="left-icon-text">EA Play</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="middle-section col-8">
+            <p>asdasdasdd</p>
+        </div>
+        <div class="right-bar col-2">
+            <p>asdasdasdd</p>
+        </div>
+    </div>
+    <script>
+        // left-bar link'lerine tklandğında görseli değiştirmek için.
+        // Aktif sayfa URL'sini al
+        const currentPath = window.location.pathname;
+    
+        // Tüm nav-link öğelerini seç
+        document.querySelectorAll('.nav-link').forEach(link => {
+            // href ile URL path'i eşleşiyorsa active class'ı ekle
+            if (link.getAttribute('href') && currentPath.endsWith(link.getAttribute('href'))) {
+                link.classList.add('active');
+            }
+        });
+    </script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>

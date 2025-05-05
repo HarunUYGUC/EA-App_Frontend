@@ -1,0 +1,66 @@
+:root {
+    --primary: #182634;
+    --secondary: #203246;
+    --hover: #283f57;
+    --light: #DDE6ED;
+}
+
+body {
+    font-family: "Special Gothic", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+.left-bar, .right-bar {
+    background-color: var(--primary);
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh
+}
+
+.middle-section {
+    background-color: var(--secondary);
+}
+
+/* left-bar */
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 0;
+}
+
+.link a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px;
+    border-left: 4px solid transparent;
+    transition: border-left 0.3s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-link.active {
+    border-left: 4px solid white;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.link:hover {
+    background-color: var(--hover);
+}
+
+.left-icon {
+    color: var(--light);
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.left-icon-text {
+    color: var(--light);
+    font-size: 15px;
+}
