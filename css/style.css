@@ -3,6 +3,10 @@
     --secondary: #203246;
     --hover: #283f57;
     --light: #DDE6ED;
+    --green: #6ac059;
+    --grey: #9DB2BF;
+    --black: #393E46;
+    --blue: #1B56FD;
 }
 
 body {
@@ -187,3 +191,100 @@ a {
 /* friends */
 
 /* import-friends */
+
+
+/* middle-section */
+/* most-populars */
+.populars-header {
+    color: var(--light);
+    font-size: 20px;
+}
+
+.content {
+    width: 200px;
+    height: 450px;
+}
+
+.content-img-wrapper {
+    width: 100%;
+    height: 80%;
+}
+
+.content-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.content-text {
+    color: var(--light);
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.price, .discount {
+    color: var(--green);
+    font-size: 15px;
+}
+
+.discount-text {
+    color: var(--grey);
+    font-size: 12px;
+}
+
+.content-icons {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.disappear, .not-disappear {
+    border-radius: 7px;
+    border: 2px solid var(--blue);
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disappear {
+    display: none;
+    bottom: 7px;
+    right: 35px;
+}
+
+.not-disappear {
+    bottom: 7px;
+    right: 5px;
+}
+
+.content-icon {
+    color: var(--light);
+    font-size: 15px;
+}
+
+.content:hover .disappear {
+    display: flex;
+}
+
+.content-img-wrapper {
+    transition: transform 0.4s ease;
+}
+
+.content:hover .content-img-wrapper {
+    transform: translateY(-10px);
+}
+
+.content-img-wrapper:hover {
+    cursor: pointer;
+}
+
+.content-icon:hover {
+    color: var(--grey);
+    cursor: pointer;
+}
