@@ -157,6 +157,29 @@ a {
     border-radius: 5px;
 }
 
+.dropdown-icon {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.fa-check {
+    color: #28a745;
+}
+
+.fa-stopwatch {
+    color: #ffc107;
+}
+
+.fa-circle {
+    color: grey;
+}
+
+.dropdown-divider {
+    background-color: var(--light);
+    height: 1px;
+    margin: 5px 0;
+}
+
 /* friends */
 
 /* import-friends */
