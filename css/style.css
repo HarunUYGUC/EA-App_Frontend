@@ -162,7 +162,11 @@ a {
     margin-right: 10px;
 }
 
-.fa-check {
+.status-check .fa-check {
+    color: var(--light)
+}
+
+.dropdown-icon.fa-check {
     color: #28a745;
 }
 
