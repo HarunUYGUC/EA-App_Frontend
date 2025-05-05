@@ -14,12 +14,20 @@ a {
     color: var(--light);
 }
 
-.left-bar, .right-bar {
+.left-bar {
     background-color: var(--primary);
     position: sticky;
     top: 0;
     left: 0;
-    height: 100vh
+    height: 100vh;
+}
+
+.right-bar {
+    background-color: var(--primary);
+    position: sticky;
+    top: 0;
+    right: 0;
+    height: 100vh;
 }
 
 .middle-section {
