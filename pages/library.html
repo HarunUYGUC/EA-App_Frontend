@@ -12,12 +12,15 @@
 </head>
 <body>
     <div class="row g-0">
-        <div class="left-bar col-2">
+        <div class="left-bar col-2 pt-2">
             <div class="links">
                 <div class="link my-2 ps-3">
                     <a href="../index.html" class="nav-link">
                         <i class="left-icon fa-solid fa-house-chimney"></i>
-                        <span class="left-icon-text">Ana Ekran</span>
+                        <div class="left-icon-text-wrapper">
+                            <span class="left-icon-text">Ana Ekran</span>
+                            <span class="left-icon-sub-text">İndirim 15 Mayıs'ta sona eriyor.</span>
+                        </div>
                     </a>
                 </div>
                 <div class="link my-2 ps-3">
@@ -39,12 +42,215 @@
                     </a>
                 </div>
             </div>
+            <div class="downloaded-games">
+                <h5 class="download-head mt-5 mb-3 ms-3">Yüklenen oyunlar</h5>
+                <div class="downloaded-game mb-2 ps-3 d-flex align-items-center justify-content-between">
+                    <div class="download-image-text">
+                        <img class="download-image" src="../img/a-way-out-no-text.jpg" alt="a-way-out">
+                        <span class="download-text">A Way Out</span>
+                    </div>
+                    <div class="download-icon-hover">
+                        <div class="download-icon-wrapper">
+                            <i class="download-icon fa-solid fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="middle-section col-8">
-            <p>asdasdasdd</p>
+            <div class="navbar px-5 py-3">
+                <div class="left-navbar col-6 d-flex align-items-center gap-3">
+                    <div class="left-icon-wrapper">
+                        <i class="nav-left-icon fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="left-icon-wrapper">
+                        <i class="nav-left-icon fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="input-wrapper d-flex align-items-center">
+                        <i class="input-icon fa-solid fa-magnifying-glass"></i>
+                        <input type="text" class="navbar-input" placeholder="Oyunları ve eklentileri arayın">
+                    </div>
+                </div>
+                <div class="right-navbar col-6 d-flex justify-content-end align-items-center gap-3">
+                    <div class="wish-list px-3 py-1 d-flex justify-content-between align-items-center">
+                        <div class="right-icon-wrapper">
+                            <i class="nav-right-icon fa-solid fa-heart"></i>
+                        </div>
+                        <div class="left-icon-text ps-2">İSTEK LİSTESİ</div>
+                    </div>
+                    <div class="chart px-3 py-1 d-flex justify-content-between align-items-center">
+                        <div class="right-icon-wrapper">
+                            <i class="nav-right-icon fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="left-icon-text ps-2">SEPET</div>
+                    </div>
+                </div>
+            </div>
+            <div class="most-populars d-flex flex-wrap justify-content-between px-5 mt-5">
+                <div class="col-12 mb-3 mt-4">
+                    <h2 class="populars-header">En popüler</h2>
+                </div>
+                <div class="content col-3 mb-3">
+                    <div class="content-img-wrapper">
+                        <img class="content-img" src="../img/ea-fc-25.jpeg" alt="ea-fc-25">
+                        <div class="content-icons">
+                            <div class="disappear me-2">
+                                <i class="content-icon fa-solid fa-heart"></i>
+                            </div>
+                            <div class="not-disappear">
+                                <i class="content-icon fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-text">EA SPORTS FC™ 25</div>
+                    <div class="price-wrapper mt-2">
+                            <span class="price">$20.99</span>
+                            <span class="discount-text">Normalde $69.99</span>
+                            <div class="discount mt-0">%70 indirimli</div>
+                    </div>
+                </div>
+                <div class="content col-3 mb-3">
+                    <div class="content-img-wrapper">
+                        <img class="content-img" src="../img/dragon-age-veilguard.jpeg" alt="dragon-age-veilguard">
+                        <div class="content-icons">
+                            <div class="disappear me-2">
+                                <i class="content-icon fa-solid fa-heart"></i>
+                            </div>
+                            <div class="not-disappear">
+                                <i class="content-icon fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-text">Dragon Age™: The Veilguard</div>
+                    <div class="price-wrapper mt-2">
+                            <span class="price">$29.99</span>
+                            <span class="discount-text">Normalde $59.99</span>
+                            <div class="discount mt-0">%50 indirimli</div>
+                    </div>
+                </div>
+                <div class="content col-3 mb-3">
+                    <div class="content-img-wrapper">
+                        <img class="content-img" src="../img/battlefield-2042.jpg" alt="battlefield-2042">
+                        <div class="content-icons">
+                            <div class="disappear me-2">
+                                <i class="content-icon fa-solid fa-heart"></i>
+                            </div>
+                            <div class="not-disappear">
+                                <i class="content-icon fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-text">Battlefield™ 2042</div>
+                    <div class="price-wrapper mt-2">
+                            <span class="price">$4.79</span>
+                            <span class="discount-text">Normalde $59.99</span>
+                            <div class="discount mt-0">%92 indirimli</div>
+                    </div>
+                </div>
+                <div class="content col-3 mb-3">
+                    <div class="content-img-wrapper">
+                        <img class="content-img" src="../img/star-wars-jedi-survivor.webp" alt="star-wars-jedi-survivor">
+                        <div class="content-icons">
+                            <div class="disappear me-2">
+                                <i class="content-icon fa-solid fa-heart"></i>
+                            </div>
+                            <div class="not-disappear">
+                                <i class="content-icon fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-text">STAR WARS Jedi: Survivor™</div>
+                    <div class="price-wrapper mt-2">
+                            <span class="price">$13.99</span>
+                            <span class="discount-text">Normalde $69.99</span>
+                            <div class="discount mt-0">%80 indirimli</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="right-bar col-2">
-            <p>asdasdasdd</p>
+        <div class="right-bar col-2 pt-2">
+            <div class="profile-information my-2 dropdown d-flex justify-content-between align-items-center dropdown-toggle"
+            id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="cursor: pointer;">
+                <div class="d-flex align-items-center">
+                    <div class="profile-wrapper">
+                        <img class="profile-picture" src="../img/Rek'Na.jpg" alt="Rek'Na">
+                        <span class="status-check"><i class="fa-solid fa-check"></i></span>
+                    </div>
+                    <span class="profile-picture-text">RRekNa</span>
+                </div>
+                <div>
+                    <i class="profile-icon fa-solid fa-chevron-down"></i>
+                </div>
+                <!-- Dropdown Menüsü -->
+                <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="profileDropdown">
+                    <li><a class="dropdown-item" href="#">
+                        <i class="dropdown-icon fa-solid fa-check"></i>Çevrimiçi</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">
+                        <i class="dropdown-icon fa-solid fa-stopwatch"></i>Uzakta</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">
+                        <i class="dropdown-icon fa-solid fa-circle"></i>Görünmez</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">
+                        <i class="dropdown-icon fa-solid fa-user"></i>Profilim</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">
+                        <i class="dropdown-icon fa-solid fa-circle-dot"></i>Tur atın</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">
+                        <i class="dropdown-icon fa-solid fa-plus"></i>Kod kullanın</a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">
+                        <i class="dropdown-icon fa-solid fa-gear"></i>Ayarlar</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">
+                        <i class="dropdown-icon fa-solid fa-arrow-right-from-bracket"></i>Çıkış Yap</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="friends">
+                <div class="friends-header d-flex justify-content-between align-items-center mx-3 mt-4 mb-3">
+                    <div class="friends-text-status d-flex align-items-center justify-content-between gap-2">
+                        <div class="friends-text">Arkadaşlar</div>
+                        <span class="friends-status">2/3</span>
+                    </div>
+                    <div class="friends-icon-wrapper">
+                        <i class="friends-icon fa-solid fa-user-group"></i>
+                    </div>
+                </div>
+                <div class="friends-contents">
+                    <div class="friend-content d-flex align-items-center my-1 px-3">
+                        <div class="friend-image-wrapper me-2">
+                            <img class="friend-image" src="../img/leon-s-kennedy.jpg" alt="leon-s-kennedy">
+                            <div class="friend-status friend-status-online">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                        </div>
+                        <span class="friend-text">Leon S. Kennedy</span>
+                    </div>
+                    <div class="friend-content d-flex align-items-center my-1 px-3">
+                        <div class="friend-image-wrapper me-2">
+                            <img class="friend-image" src="../img/jill-valentine.jpg" alt="jill-valentine">
+                            <div class="friend-status friend-status-waiting">
+                                <i class="dropdown-icon fa-solid fa-stopwatch"></i>
+                            </div>
+                        </div>
+                        <span class="friend-text">Jill Valentine</span>
+                    </div>
+                    <div class="friend-content d-flex align-items-center my-1 px-3">
+                        <div class="friend-image-wrapper me-2">
+                            <img class="friend-image" src="../img/geralt.jpg" alt="geralt">
+                            <div class="friend-status friend-status-offline">
+                                <i class="fa-solid fa-circle"></i>
+                            </div>
+                        </div>
+                        <span class="friend-text">Riviali Geralt</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script>
