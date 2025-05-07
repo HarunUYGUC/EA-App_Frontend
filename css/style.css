@@ -121,6 +121,11 @@ a {
     display: flex;
 }
 
+.downloaded-game:hover .download-icon-hover {
+    background-color: var(--secondary);
+    opacity: 0.7;
+}
+
 .download-image {
     width: 55px;
     height: 55px;
@@ -134,6 +139,14 @@ a {
     margin-left: 10px;
 }
 
+.download-icon-hover {
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .download-icon-wrapper {
     display: flex;
     align-items: center;
@@ -142,7 +155,6 @@ a {
     height: 33px;
     border-radius: 10px;
     background-color: var(--light-blue);
-    margin-right: 10px;
     display: none;
 }
 
