@@ -339,6 +339,18 @@ a {
 
 /* middle-section */
 /* navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 66.66%; /* col-8 karşılığı (8/12) */
+    z-index: 1000;
+    background-color: var(--primary);
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 .left-icon-wrapper {
     width: 30px;
     height: 30px;
