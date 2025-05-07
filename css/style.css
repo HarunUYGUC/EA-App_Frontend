@@ -115,6 +115,7 @@ a {
 
 .downloaded-game:hover {
     background-color: var(--hover);
+    cursor: pointer;
 }
 
 .downloaded-game:hover .download-icon-wrapper {
@@ -276,6 +277,11 @@ a {
     border-radius:7px;
     background-color: var(--secondary);
     border: 1px solid rgba(221, 230, 237, 0.4);
+}
+
+.friends-icon-wrapper:hover {
+    background-color: var(--hover);
+    cursor: pointer;
 }
 
 .friends-icon {
