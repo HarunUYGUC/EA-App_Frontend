@@ -362,6 +362,11 @@ a {
     border: 1px solid var(--light);
 }
 
+.left-icon-wrapper:hover {
+    background-color: var(--hover);
+    cursor: pointer;
+}
+
 .nav-left-icon {
     color: var(--light);
     font-size: 13px;
@@ -405,8 +410,18 @@ a {
     border: 1px solid var(--light);
 }
 
+.wish-list:hover {
+    background-color: var(--hover);
+    cursor: pointer;
+}
+
 .chart {
     border: 1px solid var(--light-blue) !important;
+}
+
+.chart:hover {
+    background-color: var(--hover);
+    cursor: pointer;
 }
 
 /* most-populars */
