@@ -7,6 +7,7 @@
     --grey: #9DB2BF;
     --black: #393E46;
     --blue: #1B56FD;
+    --light-blue: #356afd;
 }
 
 body {
@@ -97,6 +98,57 @@ a {
     text-overflow: ellipsis;
     max-width: 170px;
     letter-spacing: 1px;
+}
+
+/* downloaded-games */
+.download-head {
+    color: var(--light);
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.downloaded-game {
+    width: 100%;
+    height: 65px;
+}
+
+.downloaded-game:hover {
+    background-color: var(--hover);
+}
+
+.downloaded-game:hover .download-icon-wrapper {
+    display: flex;
+}
+
+.download-image {
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.download-text {
+    color: var(--light);
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.download-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    border-radius: 10px;
+    background-color: var(--light-blue);
+    margin-right: 10px;
+    display: none;
+}
+
+.download-icon {
+    color: var(--light);
+    font-size: 15px;
 }
 
 /* right-bar */
