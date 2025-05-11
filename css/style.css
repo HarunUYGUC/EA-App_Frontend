@@ -444,20 +444,20 @@ a {
 
 .dot {
     width: 25px;
-    height: 3px;
+    height: 4px;
     background-color: var(--light);
     opacity: 0.4;
     transition: all 0.3s ease;
 }
 
 .dot-left {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
 }
 
 .dot-right {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
 }
 
 .dot.active {
