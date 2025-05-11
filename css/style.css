@@ -430,6 +430,38 @@ a {
     font-size: 20px;
 }
 
+.pagination-dots {
+    gap: 5px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--light);
+    opacity: 0.4;
+    width: 25px;
+    transition: all 0.3s ease;
+}
+
+.dot-left {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.dot-right {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.dot.active {
+    opacity: 1;
+}
+
+.most-populars-icon-wrapper {
+    width: 37px;
+    height: 37px;
+}
+
 .content {
     width: 200px;
     height: 450px;
