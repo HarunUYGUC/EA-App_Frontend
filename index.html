@@ -183,7 +183,7 @@
                 </div>
                 <div class="content col-3 mb-3">
                     <div class="content-img-wrapper">
-                        <img class="content-img" src="img/it-takes-2.png" alt="it-takes-2">
+                        <img class="content-img" src="img/it-takes-two.jpg" alt="it-takes-two">
                         <div class="content-icons">
                             <div class="disappear me-2">
                                 <i class="content-icon fa-solid fa-heart"></i>
@@ -255,6 +255,25 @@
                             <span class="price">$2.99</span>
                             <span class="discount-text">Normalde $19.99</span>
                             <div class="discount mt-0">%85 indirimli</div>
+                    </div>
+                </div>
+                <div class="content col-3 mb-3">
+                    <div class="content-img-wrapper">
+                        <img class="content-img" src="img/command-conquer-the-ultimate-collection.webp" alt="command-conquer">
+                        <div class="content-icons">
+                            <div class="disappear me-2">
+                                <i class="content-icon fa-solid fa-heart"></i>
+                            </div>
+                            <div class="not-disappear">
+                                <i class="content-icon fa-solid fa-cart-shopping"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-text">Command & Conquer™ The Ultimate Collection</div>
+                    <div class="price-wrapper mt-2">
+                            <span class="price">$5.99</span>
+                            <span class="discount-text">Normalde $19.99</span>
+                            <div class="discount mt-0">%70 indirimli</div>
                     </div>
                 </div>
             </div>
@@ -425,58 +444,7 @@
             </div>
         </div>
     </div>
-    <script>
-        // left-bar link'lerine tklandğında görseli değiştirmek için.
-        // Aktif sayfa URL'sini al
-        const currentPath = window.location.pathname;
-    
-        // Tüm nav-link öğelerini seç
-        document.querySelectorAll('.nav-link').forEach(link => {
-            // href ile URL path'i eşleşiyorsa active class'ı ekle
-            if (link.getAttribute('href') && currentPath.endsWith(link.getAttribute('href'))) {
-                link.classList.add('active');
-            }
-        });
-    </script> 
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const contentWrapper = document.querySelector(".most-populars");
-        const contents = contentWrapper.querySelectorAll(".content");
-        const leftBtn = contentWrapper.querySelector(".left-icon-wrapper-left");
-        const rightBtn = contentWrapper.querySelector(".left-icon-wrapper-right");
-        const dots = contentWrapper.querySelectorAll(".dot");
-
-        const itemsPerPage = 4;
-        let currentPage = 0;
-        const totalPages = Math.ceil(contents.length / itemsPerPage);
-
-        function updateSlider() {
-            contents.forEach((item, index) => {
-                item.style.display =
-                    index >= currentPage * itemsPerPage &&
-                    index < (currentPage + 1) * itemsPerPage
-                        ? "block"
-                        : "none";
-            });
-
-            dots.forEach((dot, index) => {
-                dot.classList.toggle("active", index === currentPage);
-            });
-        }
-
-        leftBtn.addEventListener("click", () => {
-            currentPage = (currentPage - 1 + totalPages) % totalPages;
-            updateSlider();
-        });
-
-        rightBtn.addEventListener("click", () => {
-            currentPage = (currentPage + 1) % totalPages;
-            updateSlider();
-        });
-
-        updateSlider(); // ilk başta çağır
-    });
-    </script>   
+    <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>
