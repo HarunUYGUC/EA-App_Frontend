@@ -100,6 +100,86 @@ a {
     letter-spacing: 1px;
 }
 
+@media (max-width: 900px) {
+    .navbar .left-icon-text {
+        display: none;
+    }
+
+    .links .left-icon-text {
+        display: none;
+    }
+
+    .links .left-icon-sub-text{
+        display: none;
+    }
+
+    .friends-contents .friend-text {
+        display: none;
+    }
+
+    .profile-information .profile-picture-text {
+        display: none;
+    }
+
+    .friends-header .friends-status {
+        display: none;
+    }
+
+    .friends .friends-header .friends-text {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .navbar .input-wrapper {
+        width: 150px;
+    }
+
+    .left-icon-text {
+        font-size: 13px;
+    }
+
+    .left-icon-sub-text {
+        font-size: 10px;
+    }
+
+    .downloaded-games .download-head {
+        font-size: 13px;
+    }
+
+    .downloaded-games .download-text {
+        font-size: 11px;
+    }
+
+    .friend-content .friend-text {
+        font-size: 12px;
+    }
+
+    .friends-text-status .friends-text {
+        font-size: 12px;
+    }
+
+    .friends-text-status .friends-status {
+        font-size: 12px;
+    }
+
+    .firends .friends-header {
+        display: block;
+    }
+}
+
+@media (max-width: 1260px) {
+    .downloaded-game {
+        height: 90px;
+    }
+
+    .downloaded-games .download-text {
+        display: block;
+        margin-top: 2px;
+        margin-left: 0px;
+    }
+}
+
 /* downloaded-games */
 .download-head {
     color: var(--light);
