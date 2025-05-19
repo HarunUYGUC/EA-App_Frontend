@@ -101,27 +101,15 @@ a {
 }
 
 @media (max-width: 900px) {
-    .navbar .left-icon-text {
-        display: none;
-    }
-
     .links .left-icon-text {
-        display: none;
+        font-size: 10px;
     }
 
-    .links .left-icon-sub-text{
-        display: none;
-    }
-
-    .friends-contents .friend-text {
-        display: none;
-    }
-
-    .profile-information .profile-picture-text {
-        display: none;
-    }
-
-    .friends-header .friends-status {
+    .links .left-icon-sub-text, 
+    .friends-contents .friend-text,
+    .profile-information .profile-picture-text,
+    .friends-header .friends-status,
+    .navbar .left-icon-text {
         display: none;
     }
 
@@ -482,6 +470,93 @@ a {
 .nav-right-icon {
     color: var(--light);
     font-size: 14px;
+}
+
+@media (max-width: 576px) {
+    .left-icon {
+        font-size: 20px;
+    }
+
+    .navbar {
+        padding-right: 16px !important;
+        padding-left: 16px !important;
+    }
+
+    .nav-left-icon {
+        font-size: 10px;
+    }
+
+    .nav-right-icon {
+        font-size: 11px;
+    }
+
+    .links .left-icon-text,
+    .friends-icon-wrapper {
+        display: none;
+    }
+
+    .wish-list, .chart {
+        padding: 6px !important;
+    }
+
+    .friend-content{
+        padding-right: 8px !important;
+        padding-left: 8px !important;
+    }
+
+    .friend-image-wrapper {
+        width: 45px;
+        height: 45px;
+        margin-right: 0px !important;
+    }
+
+    .friends-icon-wrapper {
+        width: 20px;
+        height: 20px;
+    }
+
+    .friends-icon {
+        font-size: 8px;
+    }
+
+    .download-image {
+        width: 45px;
+        height: 45px;
+    }
+
+    .downloaded-games .download-head {
+        font-size: 11px;
+    }
+
+    .downloaded-games .download-text {
+        font-size: 10px;
+    }
+
+    .profile-wrapper {
+        width: 45px;
+        height: 45px;
+        margin: 5px;
+    }
+
+    .left-icon-wrapper {
+        width: 25px !important;
+        height: 25px !important;
+    }
+
+    .dot {
+        width: 10px !important;
+        height: 2px !important;
+    }
+
+    .populars-header {
+        color: var(--light);
+        font-size: 17px !important;
+    }
+
+    .friends-header {
+        margin-left: 7px !important;
+        margin-right: 7px !important;
+    }
 }
 
 .wish-list, .chart {
